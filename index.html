@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/neon.css">
+    <style>
+        body{
+            background-color: aqua;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 35px;
+            
+        }
+        button{
+            color: red;
+            font-size: 35px;    
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Trabalhando com dados!</h1>
+    <button onclick="inicio()"> CLIQUE PARA COMEÇAR</button>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado...</p>
+    </section>
+    <script>
+        function inicio() {
+            let nome = window.prompt('Qual seu nome?')
+            let resultado = window.document.getElementById('resultado')
+            resultado.innerHTML =`<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#x1f596;`
+        }
+    </script>
+    </center>
+    
+</body>
+</html>
